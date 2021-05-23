@@ -1,0 +1,39 @@
+  mkdir ProjectGitAssignment5
+  cd ProjectGitAssignment5
+  git init
+  ls -a
+  touch inital.txt
+  git add .
+  git commit -m "initial commit"
+  ls
+  git branch
+  git branch release
+  git branch hotfix
+  git branch develop
+  git branch feature1
+  git branch feature2
+  git checkout feature1
+  touch feature1.txt
+  git add feature1.txt
+  git commit -m "feature 1"
+  git checkout develop
+  ls
+  git merge feature1
+  ls
+  git checkout release
+  ls
+  git merge develop
+  ls
+  git checkout master
+  ls
+  git merge release
+  ls
+  git checkout hotfix
+  touch urgent.txt
+  git add urgent.txt
+  git commit -m "urgent.txt"
+  git checkout master
+  ls
+  git merge hotfix
+  ls
+  git log --oneline
