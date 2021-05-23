@@ -1,0 +1,45 @@
+  mkdir ProjectGitAssignment3
+  cd ProjectGitAssignment3
+  git init
+  touch inital.txt
+  git add .
+  git commit -m "initial"
+  git branch
+  git branch Develop
+  git branch F1
+  git branch f2
+  git branch
+  touch main.txt
+  git add main.txt
+  git commit -m "main txt"
+  git checkout Develop
+  touch develop.txt
+  git add develop.txt
+  git commit -m "develop txt"
+  git log --oneline
+  ls
+  git checkout F1
+  ls
+  touch f1.txt
+  git add f1.txt
+  git commit -m "f1 txt"
+  ls
+  git checkout f2
+  touch f2.txt
+  git add f2.txt
+  git commit -m "f2 txt"
+  git log --oneline
+  ls
+  git checkout master
+  ls
+  git log --oneline
+  git remote -v
+  git remote add origin https://github.com/AjayKapse6922/gitassignment3.git
+  git push --set-upstream origin master
+  git push --set-upstream origin Develop
+  git push --set-upstream origin F1
+  git push --set-upstream origin f2
+  git branch -d f2
+  git branch
+  
+  (Deleted f2 branch by pull request and then ignoring the merge and deleting branch under https://github.com/AjayKapse6922/gitassignment3.git)
