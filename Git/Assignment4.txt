@@ -43,5 +43,5 @@
   	git checkout private
   	git log --oneline
   	ls
-  	git merge master
+  	git rebase master
   	git log --oneline
