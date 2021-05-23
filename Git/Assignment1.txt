@@ -1,0 +1,12 @@
+  mkdir GitAssignment1
+  cd GitAssignment1
+  git init
+  touch Code.txt Log.txt OutPut.txt
+  git status	
+  git add Code.txt OutPut.txt
+  git status
+  git commit -m "Log and OutPut text added"
+  git status
+  git remote add origin https://github.com/AjayKapse6922/DevOpsWeekdayBC2118052505.git
+  git remote -v
+  git push --set-upstream origin master
