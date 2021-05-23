@@ -1,0 +1,33 @@
+
+mkdir ProjectGit_Assignment2
+cd ProjectGit_Assignment2
+git init
+touch feature1.txt feature2.txt
+git add .
+git commit -m "initial commit"
+git branch
+git branch develop
+git branch feature1
+git branch feature2
+git branch
+git checkout develop
+touch develop.txt
+git status
+git stash	(There was no need to stash because per instruction no need to commit, unnecessary step)
+git checkout feature1
+touch new.txt
+git status
+git add new.txt
+git commit -m "new.txt"
+git status
+ls
+git branch
+git log --oneline
+git checkout develop
+git stash pop	(There was no need to unstash because per instruction it was not committed, unnecessary step)
+git status
+ls
+git add develop.txt
+git commit -m "develop"
+git log --oneline
+ls
