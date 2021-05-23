@@ -13,7 +13,7 @@ git branch
 git checkout develop
 touch develop.txt
 git status
-git stash	(There was no need to stash because per instruction no need to commit, unnecessary step)
+git stash	-u
 git checkout feature1
 touch new.txt
 git status
@@ -24,7 +24,7 @@ ls
 git branch
 git log --oneline
 git checkout develop
-git stash pop	(There was no need to unstash because per instruction it was not committed, unnecessary step)
+git stash pop	
 git status
 ls
 git add develop.txt
