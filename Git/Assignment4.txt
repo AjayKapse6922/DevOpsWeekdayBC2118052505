@@ -1,0 +1,47 @@
+	mkdir ProjectGitAssignment4
+	cd ProjectGitAssignment4
+	git init
+	touch master.txt
+ 	git add .
+	git commit -m "inital commit"
+	git log --oneline
+ 	git branch
+ 	git branch public1
+	git branch public2
+	git branch private
+	git branch
+	git checkout public1
+	touch public1.txt
+	git add public1.txt
+	git commit -m "public 1"
+ 	git log --oneline
+	ls
+	git checkout master
+	ls
+	git merge public1
+	git log --oneline
+ 	ls
+ 	git merge public2
+ 	git checkout private
+ 	vi master.txt
+ 	git add master.txt
+	git status
+	git commit -m "modified master.txt"
+	git log --oneline
+ 	git checkout public1
+	git merge private
+	git log --oneline
+ 	git checkout public2
+	git log --oneline
+  	git merge private
+  	git log --oneline
+  	ls
+  	git branch
+  	git checkout master
+  	git merge private
+  	git checkout master
+  	git checkout private
+  	git log --oneline
+  	ls
+  	git merge master
+  	git log --oneline
