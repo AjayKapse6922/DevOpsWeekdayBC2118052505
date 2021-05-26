@@ -1,45 +1,38 @@
-  mkdir ProjectGitAssignment3
-  cd ProjectGitAssignment3
-  git init
-  touch inital.txt
-  git add .
-  git commit -m "initial"
-  git branch
-  git branch Develop
-  git branch F1
-  git branch f2
-  git branch
-  touch main.txt
-  git add main.txt
-  git commit -m "main txt"
-  git checkout Develop
-  touch develop.txt
-  git add develop.txt
-  git commit -m "develop txt"
-  git log --oneline
-  ls
-  git checkout F1
-  ls
-  touch f1.txt
-  git add f1.txt
-  git commit -m "f1 txt"
-  ls
-  git checkout f2
-  touch f2.txt
-  git add f2.txt
-  git commit -m "f2 txt"
-  git log --oneline
-  ls
-  git checkout master
-  ls
-  git log --oneline
-  git remote -v
-  git remote add origin https://github.com/AjayKapse6922/gitassignment3.git
-  git push --set-upstream origin master
-  git push --set-upstream origin Develop
-  git push --set-upstream origin F1
-  git push --set-upstream origin f2
-  git branch -d f2
-  git branch
-  
-  (Deleted f2 branch by pull request and then ignoring the merge and deleting branch under https://github.com/AjayKapse6922/gitassignment3.git)
+
+  428  mkdir ProjectGitAssignment3
+  429  cd ProjectGitAssignment3/
+  430  git init
+  431  git branch
+  432  touch initial.txt
+  433  git add .
+  434  git commit -m "Initial commit"
+  435  git branch
+  436  git branch Develop
+  437  git branch F1
+  438  git branch f2
+  439  git branch
+  440  touch main.txt
+  441  git add main.txt
+  442  git commit -m "main on master"
+  444  git log --oneline
+  445  git checkout Develop
+  446  touch develop.txt
+  447  git add develop.txt
+  448  git commit -m "develop added"
+  449  git checkout F1
+  450  touch f1.txt
+  451  git add f1.txt
+  452  git commit -m "f1"
+  453  git checkout f2
+  454  touch f2.txt
+  455  git add f2.txt
+  456  git commit -m "f2"
+  457  git remote -v
+  458  git remote add origin https://github.com/AjayKapse6922/GitAssgnment3.git
+  459  git push --all
+  461  git branch
+  462  git checkout master
+  463  git branch -D f2
+  464  git push remove f2 origin
+  465  git push --all
+  466  git push origin -d f2
