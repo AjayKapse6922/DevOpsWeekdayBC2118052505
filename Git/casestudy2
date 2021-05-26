@@ -1,0 +1,30 @@
+
+  545  git clone https://github.com/AjayKapse6922/merge-conflict.git
+  546  ls
+  547  cd merge-conflict/
+  548  ls
+  549  git branch
+  550  git checkout feature1
+  551  ls
+  552  git merge master
+  553  vi main.c
+  554  git add .
+  555  git commit -m "merge security patch from master to feature 1"
+  556  git checkout feature2
+  557  git rebase master
+  558  vi main.c
+  559  git add .
+  560  git commit -m "updated security from master"
+  561  git status
+  562  git log --oneline
+  563  git checkout master
+  564  git merge feature1
+  565  vi main.c
+  566  git merge feature2
+  567  vi main.c
+  568  git push --all
+  569  ls
+  570  history
+
+
+https://github.com/AjayKapse6922/merge-conflict
