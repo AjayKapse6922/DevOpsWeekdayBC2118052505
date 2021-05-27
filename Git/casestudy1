@@ -49,10 +49,5 @@ Code:
   git remote add origin https://github.com/AjayKapse6922/GitFlow.git
   git branch
   ls
-  git push --set-upstream origin master
-  git push --set-upstream origin hotfix
-  git push --set-upstream origin release
-  git push --set-upstream origin develop
-  git push --set-upstream origin feature1
-  git push --set-upstream origin feature2
+  git push --all
     
