@@ -1,0 +1,11 @@
+docker pull ubuntu
+docker run -it -d ubuntu
+docker run -it -d -p 80:80 ubuntu
+docker ps
+docker exec -it ed624fec3587 bash
+       apt-get update
+       apt-get install apache2
+       service apache2 status
+       service apache2 start
+
+http://52.15.103.53/ (working)
