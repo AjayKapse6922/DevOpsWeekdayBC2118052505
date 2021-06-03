@@ -1,0 +1,11 @@
+	docker commit 7e5b32bdf217 ajaykapse6022/apache2onubuntu
+	docker images	
+	docker run -it -d -p 81:80 ajaykapse6022/apache2onubuntu
+   	docker exec -it 95a6259ea9aeee3906bac032640eb9ae091c1e1a5a498a0b3744514116798f68  bash
+  		service apache2 status
+  		service apache2 start
+
+	Access 
+	http://13.59.218.105:81/
+	it is working 
+	Apache2 Ubuntu Default Page, it works page is displayed
