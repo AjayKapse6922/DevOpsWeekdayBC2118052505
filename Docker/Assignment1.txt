@@ -8,3 +8,5 @@ docker exec -it ed624fec3587 bash
        service apache2 start
 
 http://52.15.103.53/ (working)
+shows:
+Apache2 Ubuntu Default Page, it works page
