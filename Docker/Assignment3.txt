@@ -1,0 +1,24 @@
+Machine 1:
+
+docker login
+ajaykapse6022
+***
+
+docker push ajaykapse6022/apache2onubuntu
+
+Verified in dockerhub:
+https://hub.docker.com/repository/docker/ajaykapse6022/apache2onubuntu
+
+Machine 2:
+Pre-requiste: installed docker
+
+docker pull ajaykapse6022/apache2onubuntu
+docker run -it -d -p 80:80 ajaykapse6022/apache2onubuntu
+docker exec -it db8db07c14a587674afcb8006fb5049bc6309717009230021af8a587a26e632e bash
+  service apache2 status
+  service apache2 start
+  
+Verify machine 2 url:
+http://3.139.99.198/
+
+its working apache 2, it works displayed
