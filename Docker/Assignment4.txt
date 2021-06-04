@@ -1,0 +1,17 @@
+ mkdir docker
+ cd docker
+ vi dockerfile
+ docker build . -t ajaykapse6022/customapache2
+ docker images
+ docker run -it -d ddec6b62a14c
+ docker exec -it 123f849ea5df7c524f9f363e9c7fdbdc701a21892e79f85d93222a2985521efa bash
+
+verified apache2 is running by
+  system apache2 status 
+  
+ dockerfile content:
+  FROM ubuntu
+  RUN apt-get update
+  RUN apt-get install tzdata
+  RUN apt-get -y install apache2
+  ENTRYPOINT apachectl -D FOREGROUND
