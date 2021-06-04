@@ -1,0 +1,31 @@
+docker pull ubuntu
+docker run -it -d -p 80:80 ubuntu
+docker ps
+docker exec -it ed624fec3587 bash
+       apt-get update
+       apt-get install apache2
+
+docker login
+ajaykapse6022
+***
+
+docker push ajaykapse6022/apache2onubuntu
+
+
+docker build . -t customapache2-2
+docker ps
+docker images
+docker run -it -d -p 82:80 customapache2-2
+docker ps
+docker exec -it 32a6dc7e1187 bash
+ 
+Check if the services are already running by running
+  system apache2 status
+  
+dockerfile: (assuming code file is present in the current directory)
+FROM ubuntu
+RUN apt-get update
+RUN apt-get install tzdata
+RUN apt-get -y install apache2
+ADD . /var/www/html
+ENTRYPOINT apachectl -D FOREGROUND
