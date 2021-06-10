@@ -1,1 +1,9 @@
-Test
+docker run -it -d ajaykapse6022/apache2onubuntu bash
+docker ps
+
+check the website (it is working)
+http://18.189.192.157/
+
+docker volume create code-files
+docker ps
+docker run -it --mount source=code-files,destination=/var/www/html -d ajaykapse6022/apache2onubuntu
